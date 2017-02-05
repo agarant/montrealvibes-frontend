@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const shadowLevels = {
   1: '0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12)',
   2: '0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12)',
-  3: '0 1px 8px 0 rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12);'
+  3: '0 1px 8px 0 rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12)',
+  10:'0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12)',
 };
 
 const StyledDiv = styled.div`
@@ -12,6 +13,12 @@ const StyledDiv = styled.div`
   background-color: ${props => props.theme.palette.white};
   color: ${props => props.theme.palette.textColor};
   padding: 0;
+  transition: box-shadow .15s linear;
+  
+  &:hover {
+    cursor: pointer;
+    box-shadow: ${props => shadowLevels[10]};
+  }
 `;
 
 class WhiteFrame extends Component {

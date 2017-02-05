@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
+import EventCards from './EventCards';
+import styled from 'styled-components';
 
-class Events extends Component {
+const StyledDiv = styled.div`
+  margin-top: 40px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export default class Events extends Component {
   render() {
     return (
-      <div>
-        <h1> 404 Not Found</h1>
-      </div>
+      <StyledDiv>
+        <EventCards {...this.props}/>
+      </StyledDiv>
     );
   }
 }
-
-export default Events;

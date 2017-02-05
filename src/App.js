@@ -5,9 +5,9 @@ import styled from 'styled-components';
 import 'react-select/dist/react-select.css';
 
 const MainContent = styled.div`
-  height: 99vh;
-  min-height: 100%;
+  height: 100%;
   margin-bottom: -50px;
+  padding-bottom: 50px;
 `;
 
 class App extends Component {
