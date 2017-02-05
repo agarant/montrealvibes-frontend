@@ -4,21 +4,21 @@ import WhiteFrame from '../shared/WhiteFrame';
 
 const MoodsContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  
+  flex-flow: row wrap
+  justify-content: space-around;
+  max-width: 900px;
 `;
 
 const MoodWrapper = styled.div`
-  padding: 20px;
+  margin: 10px;
   flex-gow: 1;
-  width: 200px;
-  height: 150px;
+  width: 230px;
+  background-color: red;
 `;
 
 const MoodContent = styled.div`
   font-size: 18px;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
 `;
@@ -63,12 +63,20 @@ const Mood = (value) => (
   </MoodWrapper>
 );
 
+const OuterWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export default class Moods extends Component {
   render() {
     return (
-      <MoodsContainer>
-        {this.props.moods.map(Mood)}
-      </MoodsContainer>
+      <OuterWrapper>
+        <MoodsContainer>
+          {this.props.moods.map(Mood)}
+        </MoodsContainer>
+      </OuterWrapper>
+
     );
   }
 }

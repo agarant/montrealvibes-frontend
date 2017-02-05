@@ -16,7 +16,10 @@ const mockMoods = [
   }, {
     tagline: 'Artistic evening.',
     mood: 'artsy'
-  }
+  }, {
+    tagline: 'Artistic evening.',
+    mood: 'artsy'
+  },
 ];
 
 function hoursToMoment(hours) {
