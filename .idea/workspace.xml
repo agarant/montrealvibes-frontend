@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="abbc529b-3670-4cd7-8bea-1aba8136476c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/_redirects" afterPath="$PROJECT_DIR$/public/_redirects" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/EventsRoute/EventsRoute.js" afterPath="$PROJECT_DIR$/src/components/EventsRoute/EventsRoute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes.js" afterPath="$PROJECT_DIR$/src/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/api.js" afterPath="$PROJECT_DIR$/src/services/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Events/Events.js" afterPath="$PROJECT_DIR$/src/components/Events/Events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Home.js" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" />
     </list>
     <ignored path="montrealvibes-frontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +24,7 @@
     <favorites_list name="montrealvibes-frontend" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.73900294">
+    <splitter split-orientation="horizontal" split-proportion="0.35064936">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -58,8 +56,8 @@
                   <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
-                    <marker date="1486304949941" expanded="true" signature="7097:7099" ph="&lt;xml/&gt;" />
-                    <marker date="1486304949941" expanded="true" signature="7097:7102" ph="&lt;xml/&gt;" />
+                    <marker date="1486307393571" expanded="true" signature="7097:7099" ph="&lt;xml/&gt;" />
+                    <marker date="1486307393571" expanded="true" signature="7097:7102" ph="&lt;xml/&gt;" />
                   </folding>
                 </state>
               </provider>
@@ -75,14 +73,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+                <state relative-caret-position="495">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
-                    <marker date="1486301275391" expanded="true" signature="406:508" ph="..." />
+                    <marker date="1486308844863" expanded="true" signature="408:510" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -101,7 +99,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_redirects" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_redirects" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/_redirects">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="33">
@@ -164,11 +162,21 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/App.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="594">
+                  <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="Moods.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Home/Moods.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+                <state relative-caret-position="136">
+                  <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                     <element signature="e#467#2437#0" expanded="false" />
@@ -189,10 +197,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/routes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="276">
+                <state relative-caret-position="4191">
                   <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
@@ -226,11 +234,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Events.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Events.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Events/Events.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+                <state relative-caret-position="165">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -241,14 +249,9 @@
           <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
+                <state relative-caret-position="759">
                   <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-                  <folding>
-                    <marker date="1486304147104" expanded="true" signature="0:615" ph="{&quot;name&quot;: &quot;montrealvibes-frontend&quot;...}" />
-                    <marker date="1486304147104" expanded="true" signature="100:134" ph="{&quot;react-scripts&quot;: &quot;0.8.5&quot;...}" />
-                    <marker date="1486304147104" expanded="true" signature="154:374" ph="{&quot;react&quot;: &quot;^15.4.2&quot;...}" />
-                    <marker date="1486304147104" expanded="true" signature="389:547" ph="{&quot;start&quot;: &quot;react-scripts start&quot;...}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -285,7 +288,6 @@
         <option value="$PROJECT_DIR$/src/actions/cart.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.css" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/Home/TimePicker.js" />
         <option value="$PROJECT_DIR$/src/components/shared/WhiteFrame.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
@@ -294,12 +296,13 @@
         <option value="$PROJECT_DIR$/src/components/Events/EventCards.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/Events/Events.js" />
         <option value="$PROJECT_DIR$/src/services/api.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/components/Events/EventCard.js" />
         <option value="$PROJECT_DIR$/src/components/EventsRoute/EventsRoute.js" />
         <option value="$PROJECT_DIR$/public/_redirects" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/Events/Events.js" />
       </list>
     </option>
   </component>
@@ -412,6 +415,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montrealvibes-frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="montrealvibes-frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1103,12 +1128,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486225546101</updated>
-      <workItem from="1486225548277" duration="49745000" />
+      <workItem from="1486225548277" duration="51212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49745000" />
+    <option name="totallyTimeSpent" value="51212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
@@ -1308,30 +1333,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1486301275391" expanded="true" signature="406:508" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1350,52 +1356,6 @@
         <state relative-caret-position="528">
           <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <marker date="1486304147104" expanded="true" signature="0:615" ph="{&quot;name&quot;: &quot;montrealvibes-frontend&quot;...}" />
-            <marker date="1486304147104" expanded="true" signature="100:134" ph="{&quot;react-scripts&quot;: &quot;0.8.5&quot;...}" />
-            <marker date="1486304147104" expanded="true" signature="154:374" ph="{&quot;react&quot;: &quot;^15.4.2&quot;...}" />
-            <marker date="1486304147104" expanded="true" signature="389:547" ph="{&quot;start&quot;: &quot;react-scripts start&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Events/Events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Moods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1221">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#467#2437#0" expanded="false" />
-            <element signature="e#2452#6084#0" expanded="false" />
-            <element signature="e#6098#8994#0" expanded="false" />
-            <element signature="e#9008#11571#0" expanded="false" />
-            <element signature="e#11585#13785#0" expanded="false" />
-            <element signature="e#13798#16803#0" expanded="false" />
-            <element signature="e#16820#20518#0" expanded="false" />
-            <element signature="e#20533#23587#0" expanded="false" />
-            <element signature="e#23602#27136#0" expanded="false" />
-            <element signature="e#27151#30504#0" expanded="false" />
-            <element signature="e#30525#32819#0" expanded="false" />
-            <element signature="e#32834#34866#0" expanded="false" />
-            <element signature="e#34881#37484#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,22 +1380,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Events/EventCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="560">
+          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3131">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1486304949941" expanded="true" signature="7097:7099" ph="&lt;xml/&gt;" />
-            <marker date="1486304949941" expanded="true" signature="7097:7102" ph="&lt;xml/&gt;" />
           </folding>
         </state>
       </provider>
@@ -1450,11 +1398,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/_redirects">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Moods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#467#2437#0" expanded="false" />
+            <element signature="e#2452#6084#0" expanded="false" />
+            <element signature="e#6098#8994#0" expanded="false" />
+            <element signature="e#9008#11571#0" expanded="false" />
+            <element signature="e#11585#13785#0" expanded="false" />
+            <element signature="e#13798#16803#0" expanded="false" />
+            <element signature="e#16820#20518#0" expanded="false" />
+            <element signature="e#20533#23587#0" expanded="false" />
+            <element signature="e#23602#27136#0" expanded="false" />
+            <element signature="e#27151#30504#0" expanded="false" />
+            <element signature="e#30525#32819#0" expanded="false" />
+            <element signature="e#32834#34866#0" expanded="false" />
+            <element signature="e#34881#37484#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1486308844863" expanded="true" signature="408:510" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4191">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Events/Events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

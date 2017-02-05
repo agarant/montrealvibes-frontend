@@ -14,6 +14,8 @@ const Separator = styled.div`
   height: 30px;
 `;
 
+
+
 export default class Home extends Component {
   render() {
     return (
