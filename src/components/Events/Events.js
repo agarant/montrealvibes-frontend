@@ -16,7 +16,6 @@ const TopLayer = styled.div`
 `;
 
 function handleClick(){
-  console.log('clicked');
   browserHistory.push('/');
 }
 

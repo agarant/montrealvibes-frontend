@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import EventCard from '../Events/EventCard.js';
 //import Moods from './Events';
+import {browserHistory} from 'react-router';
 
 const MapContainer = styled.div`
   display: flex;
@@ -48,6 +49,16 @@ const NumberCircle = styled.div`
   font: 12px Arial, sans-serif;
 `;
 
+function handleClick(){
+  browserHistory.push('/events');
+}
+
+const TopLayer = styled.div`
+  margin-left: 30px;
+  margin-top: 10px;
+  height: 50px;
+`;
+
 const Event = (value, index, selectEvent) => (
   <RouteWrapper>
     <NumberCircle>
@@ -76,6 +87,11 @@ const GettingStartedGoogleMap = withGoogleMap(props => (
 export default class EventsRoute extends Component {
   constructor(props) {
     super(props);
+
+    if (this.props.events.length < 1) {
+      browserHistory.push('/');
+    }
+
     const markers = this.props.events.map((a,i) => ({
       position: {
         lat: a.lat,
@@ -95,6 +111,9 @@ export default class EventsRoute extends Component {
   render() {
     return (
       <div>
+        <TopLayer className="clickable" onClick={handleClick}>
+          <img className="icon icons8-Long-Arrow-Left-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABSklEQVRoQ+2XsQ3CQAxFfSnokGADWCASDazBCLABFFBDDUU2gHWgzASwQVIjYZQAEZCEECtW4sNXRrHv3v++O58BS4axhAMUpGlOqiPqCJMCWlpMwpLTqiNk6ZgC1REmYclpSzmyPPjjK8Aums0YmG+G7p48c8WBP4Msjv4E0MQQ0UDAYDtyuxWvh5zuJ5BPiAdKuBm5HfLMFQcWgmRDRLWFUzGlJQUi3rN5DkuCyAWRBpEJIhEiBSIV4g1EMkQCkgtR8VnPkg7xBA6sjWiIly7DChAADON7RLIriHA2Dq6SC9GKzf7chJJhUi2KVJjMXksijN1No8Q98x8Pq2/OiHyzZ1+aGF5a7Z436AcsPVTJpIWl9ZrvfpqBF38zMBPzZi8pSq2/l3Kk1pUWTK4gTXNHHVFHmBTQ0mISlpxWHSFLxxSojjAJS057A0i0qxO9tD+EAAAAAElFTkSuQmCC" width="50" height="50"/>
+        </TopLayer>
         <MapContainer>
           <MapWrapper>
             <GettingStartedGoogleMap
