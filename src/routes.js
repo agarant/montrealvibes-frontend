@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
 import Home from './components/Home/Home';
 import Events from './components/Events/Events';
+import EventsRoute from './components/EventsRoute/EventsRoute';
 import NotFound from './components/NotFound';
 
 import App from './App';
@@ -71,6 +72,7 @@ export default class Routes extends Component {
             moods={this.state.moods}
           />}/>
           <Route path='/events' component={() => <Events/>}/>
+          <Route path='/route' component={() => <EventsRoute/>}/>
           <Route path="*" component={NotFound}/>
         </Route>
       </Router>
