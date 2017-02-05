@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+import EventCards from '../Events/EventCards.js';
 //import Moods from './Events';
 
 const MapContainer = styled.div`
@@ -51,7 +52,12 @@ const NumberCircle = styled.div`
 
 const Event = (value) => (
   <RouteWrapper>
-    TODO
+    <NumberCircle>
+      1
+    </NumberCircle>
+    <div>
+      EVENT HERE
+    </div>
   </RouteWrapper>
 );
 
@@ -171,30 +177,7 @@ export default class EventsRoute extends Component {
           </MapWrapper>
           <MapWrapper>
             <RouteContainer>
-              <RouteWrapper>
-                <NumberCircle>
-                  1
-                </NumberCircle>
-                <div>
-                  EVENT HERE
-                </div>
-              </RouteWrapper>
-              <RouteWrapper>
-                <NumberCircle>
-                  2
-                </NumberCircle>
-                <div>
-                  EVENT HERE
-                </div>
-              </RouteWrapper>
-              <RouteWrapper>
-                <NumberCircle>
-                  3
-                </NumberCircle>
-                <div>
-                  EVENT HERE
-                </div>
-              </RouteWrapper>
+              {this.props.events.map(a => Event(a, this.props.selectEvents))}
             </RouteContainer>
           </MapWrapper>
         </MapContainer>
