@@ -2,7 +2,7 @@
     background-color: transparent !important;
     border: none !important;
     margin-right: 12px !important;
-    width: 120px !important;
+    width: 180px !important;
 }
 
 .Select-control:hover {
@@ -16,4 +16,8 @@
 
 .Select-value {
     padding: 0 !important;
+}
+
+.Select-value-label {
+    font-size: 30px;
 }
