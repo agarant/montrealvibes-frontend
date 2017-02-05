@@ -1,2 +1,2 @@
-/api/* http://montrealvibes.eastus.cloudapp.azure.com/api/:splat 200
+/api/* http://montrealvibes.eastus.cloudapp.azure.com/api/:splat 200!
 /*    /index.html   200
