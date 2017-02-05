@@ -1,0 +1,16 @@
+.Select-control {
+    background-color: transparent !important;
+    border: none !important;
+    margin-right: 12px !important;
+    width: 120px !important;
+}
+
+.Select-control:hover {
+    box-shadow: none !important;
+}
+
+.is-focused:not(.is-open) > .Select-control {
+    border: none !important;
+    box-shadow: none !important;
+}
+
