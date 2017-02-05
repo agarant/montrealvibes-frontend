@@ -99,13 +99,15 @@ export default class Routes extends Component {
 
   selectEvent(route, url) {
     if (route) {
-      browserHistory.push('/routes');
       const routeName = url;
+      console.log(url);
       api.routes(routeName).then((routeEvents) => {
-        this.setState({routeEvents})
+        this.setState({routeEvents});
+        browserHistory.push('/route');
       });
+    } else {
+      openInNewTab(url);
     }
-    openInNewTab(url);
   }
 
   getEvents(mood) {
@@ -141,7 +143,10 @@ export default class Routes extends Component {
             selectEvent={this.selectEvent}
           />}/>
           <Route path='/events' component={() => <Events/>}/>
-          <Route path='/route' component={() => <EventsRoute/>}/>
+          <Route path='/route' component={() => <EventsRoute
+            events={this.state.routeEvents}
+            selectEvent={this.selectEvent}
+          />}/>
           <Route path="*" component={NotFound}/>
         </Route>
       </Router>

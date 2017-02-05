@@ -14,18 +14,26 @@ function json(response) {
 
 export default {
   moods(moment) {
-    return fetch(`moods?moment=${moment}`)
-      .then(status)
-      .then(json);
-  },
-  events(mood, day, moment) {
-    return fetch(`events?mood=${encodeURIComponent(mood)}&day=${day}&moment=${moment}`)
+    return fetch(`api/moods?moment=${moment}`)
       .then(status)
       .then(json)
       .then(res => res.filter(a => a));
+
+  },
+  events(mood, day, moment) {
+    return fetch(`api/events?mood=${encodeURIComponent(mood)}&day=${day}&moment=${moment}`)
+      .then(status)
+      .then(json)
+      .then(res => res.filter(a => a))
+      .then(res => res.map(a => {
+        if (a.route) {
+          a.url = a.name;
+        }
+        return a;
+      }));
   },
   routes(name) {
-    return fetch(`routes?name=${encodeURIComponent(name)}`)
+    return fetch(`api/routes?name=${encodeURIComponent(name)}`)
       .then(status)
       .then(json);
   }

@@ -1,63 +1,59 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
-import EventCards from '../Events/EventCards.js';
+import EventCard from '../Events/EventCard.js';
 //import Moods from './Events';
 
 const MapContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  padding: 20px;
 `;
 
 const MapWrapper = styled.div`
-  padding: 20px;
+  width: 600px;
+`;
+
+const RightWrapper = styled.div`
   flex-gow: 1;
-  width: 500px;
-  height: 600px;
+  overflow-y: scroll;
 `;
 
 const RouteContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 const RouteWrapper = styled.div`
-  padding: 20px;
-  flex-gow: 1;
-  width: 500px;
-  height: 100px;
+  display: flex;
 `;
 
 const NumberCircle = styled.div`
   border-radius: 50%;
   behavior: url(PIE.htc);
 
-  width: 36px;
-  height: 36px;
-  padding: 8px;
+  width: 14px;
+  height: 14px;
+  padding: 3px;
 
   background: #fff;
   border: 2px solid #666;
   color: #666;
   text-align: center;
 
-  font: 32px Arial, sans-serif;
+  font: 12px Arial, sans-serif;
 `;
 
-const Event = (value) => (
+const Event = (value, index, selectEvent) => (
   <RouteWrapper>
     <NumberCircle>
-      1
+      {index + 1}
     </NumberCircle>
-    <div>
-      EVENT HERE
-    </div>
+    {EventCard(value, selectEvent)}
   </RouteWrapper>
 );
 
@@ -78,83 +74,22 @@ const GettingStartedGoogleMap = withGoogleMap(props => (
 ));
 
 export default class EventsRoute extends Component {
-  state = {
-    markers: [{
+  constructor(props) {
+    super(props);
+    const markers = this.props.events.map((a,i) => ({
       position: {
-        lat: 45.0112183,
-        lng: -73.52067570000001,
+        lat: a.lat,
+        lng: a.long,
       },
       defaultAnimation: 2,
-      icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue1.png'
-    },
-    {
-      position: {
-        lat: 45.1112183,
-        lng: -73.52067570000001,
-      },
-      defaultAnimation: 2,
-      icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue2.png'
-    },
-    {
-      position: {
-        lat: 46.0117183,
-        lng: -73.59067570000001,
-      },
-      defaultAnimation: 2,
-      icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue3.png'
-    }
-  ],
-  };
+      icon: `https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_blue${i+1}.png`,
+    }));
+    console.log(markers);
+    this.state = {
+      markers,
+    };
 
-  handleMapLoad = this.handleMapLoad.bind(this);
-  handleMapClick = this.handleMapClick.bind(this);
-  handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
-
-  handleMapLoad(map) {
-      this._mapComponent = map;
-      if (map) {
-        console.log(map.getZoom());
-      }
-    }
-
-    /*
-     * This is called when you click on the map.
-     * Go and try click now.
-     */
-    handleMapClick(event) {
-      const nextMarkers = [
-        ...this.state.markers,
-        {
-          position: event.latLng,
-          defaultAnimation: 2,
-          key: Date.now(), // Add a key property for: http://fb.me/react-warning-keys
-        },
-      ];
-      this.setState({
-        markers: nextMarkers,
-      });
-
-      if (nextMarkers.length === 3) {
-        this.props.toast(
-          `Right click on the marker to remove it`,
-          `Also check the code!`
-        );
-      }
-    }
-
-    handleMarkerRightClick(targetMarker) {
-    /*
-     * All you modify is data, and the view is driven by data.
-     * This is so called data-driven-development. (And yes, it's now in
-     * web front end and even with google maps API.)
-     */
-    const nextMarkers = this.state.markers.filter(marker => marker !== targetMarker);
-    this.setState({
-      markers: nextMarkers,
-    });
   }
-
-
 
   // Then, render it:
   render() {
@@ -169,17 +104,14 @@ export default class EventsRoute extends Component {
               mapElement={
                 <div style={{ height: `100%` }} />
               }
-              onMapLoad={this.handleMapLoad}
-              onMapClick={this.handleMapClick}
               markers={this.state.markers}
-              onMarkerRightClick={this.handleMarkerRightClick}
             />
           </MapWrapper>
-          <MapWrapper>
+          <RightWrapper>
             <RouteContainer>
-              {this.props.events.map(a => Event(a, this.props.selectEvents))}
+              {this.props.events.map((a,i) => Event(a, i, this.props.selectEvent))}
             </RouteContainer>
-          </MapWrapper>
+          </RightWrapper>
         </MapContainer>
       </div>
     )
