@@ -67,7 +67,7 @@ export default class Routes extends Component {
       moments: MOMENT_NAMES.map((label, value) => ({label, value})),
       moods:[],
       selectedMood: '',
-      events:mockEvents,
+      events:[],
       selectedEvent: '',
       routeEvents: [],
     };
@@ -104,14 +104,11 @@ export default class Routes extends Component {
         this.setState({routeEvents})
       });
     }
-    console.log(url);
     openInNewTab(url);
   }
 
   getEvents(mood) {
-
     api.events(mood, this.state.day, this.state.moment).then((events) => {
-      console.log(events);
       this.setState({events});
       browserHistory.push('/events');
     })
@@ -138,7 +135,7 @@ export default class Routes extends Component {
             moods={this.state.moods}
             selectMood={this.selectMood}
           />}/>
-          <Route path='/events' component={() => <Events
+          <Route path='/events' onEnter={this.checkIfEvents} component={() => <Events
             events={this.state.events}
             selectEvent={this.selectEvent}
           />}/>
